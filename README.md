@@ -6,6 +6,13 @@ macOS and Linux.
 Drop images into `input/`, run the script, pick a quality. WebP files land
 in `output/`, and the originals move to `input/done/`.
 
+## Why
+
+We got tired of third-party plugins, online services and apps just to make
+WebP images. This converts everything locally: no accounts, no upload
+limits, and your images never leave your machine. Convert, then upload the
+results wherever they're going.
+
 ## Requirements
 
 - Python 3.9 or newer (the `python3` that comes with Apple's Command Line
@@ -68,17 +75,22 @@ for your system and exits.
      4) 60
      5) 50
      6) 40
-     7) All of the above
-   Choose [1-7, default 2]:
+     7) 30
+     8) 20
+     9) 10
+     10) All of the above
+   Choose [1-10, default 2]:
    ```
 
-   Press Enter for 80.
+   Press Enter for 80. Higher numbers look better, and lower numbers give
+   smaller files. 30, 20 and 10 are the most compressed, for images where
+   file size matters more than detail.
 
 ### Options
 
 | Option | What it does |
 | --- | --- |
-| `-q 80` / `-q all` | Skip the menu. Any of 90, 80, 70, 60, 50, 40 or `all`. |
+| `-q 80` / `-q all` | Skip the menu. Any of 90, 80, 70, 60, 50, 40, 30, 20, 10 or `all`. |
 | `-y` | Overwrite existing files in `output/` without asking. |
 
 ```bash

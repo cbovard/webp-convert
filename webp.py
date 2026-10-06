@@ -27,7 +27,7 @@ INPUT_DIR = HERE / "input"
 OUTPUT_DIR = HERE / "output"
 DONE_DIR = INPUT_DIR / "done"
 
-QUALITIES = [90, 80, 70, 60, 50, 40]
+QUALITIES = [90, 80, 70, 60, 50, 40, 30, 20, 10]
 DEFAULT_QUALITY = 80
 EXTENSIONS = {".jpg", ".jpeg", ".png", ".tif", ".tiff"}
 
